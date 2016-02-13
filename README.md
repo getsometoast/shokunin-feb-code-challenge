@@ -8,6 +8,8 @@ Pre reqz:
 - Virtual Box
 
 Tech Stack:
+- Bash Spec
+- Bash
 - Chef Solo
 - Chefspec
 - Serverspec
