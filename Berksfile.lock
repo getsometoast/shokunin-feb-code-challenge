@@ -1,0 +1,9 @@
+DEPENDENCIES
+  nginx-calc
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.9.2)
+  nginx-calc (0.1.0)
+    apt (>= 0.0.0)
