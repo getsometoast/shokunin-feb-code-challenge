@@ -17,3 +17,9 @@ Tech Stack:
 - Nginx
 - Lua
 
+Some usefull resources:
+- Testing bash scripts: https://github.com/realestate-com-au/bash-spec-2
+- Testing Rake Tasks: https://robots.thoughtbot.com/test-rake-tasks-like-a-boss
+- Chef DK: https://downloads.chef.io/chef-dk/mac/
+- Berkshelf: https://github.com/berkshelf/berkshelf
+- Knife docs: http://kitchen.ci/docs/getting-started/creating-cookbook
