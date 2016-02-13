@@ -10,3 +10,4 @@ gem "rspec"
 gem "rake"
 gem "rubocop"
 
+gem "kitchen-vagrant"
