@@ -29,3 +29,9 @@ task :foodcritic do
     puts 'WARNING: Skipped running foodcritic. Ruby 1.9.2 or higher required'
   end
 end
+
+task :precommit do
+  Rake::Task['spec'].invoke
+  Rake::Task['rubocop'].invoke
+  Rake::Task['foodcritic'].invoke
+end
