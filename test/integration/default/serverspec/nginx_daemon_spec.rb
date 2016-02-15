@@ -15,7 +15,7 @@ describe 'Nginx Daemon' do
 
   it 'has an addition endpoint' do
     expect(
-      Net::HTTP.get(URI('http://localhost/index.html'))
-    ).to include('I am a teapot.')
+      Net::HTTP.get(URI('http://localhost/calculate/1/plus/2'))
+    ).to include('3')
   end
 end
