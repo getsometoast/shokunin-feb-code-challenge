@@ -1,4 +1,5 @@
 require 'serverspec'
+require 'net/http'
 
 # Required by serverspec
 set :backend, :exec
@@ -13,7 +14,8 @@ describe 'Nginx Daemon' do
   end
 
   it 'has an addition endpoint' do
-    expect(Net::HTTP.get(URI('http://localhost/index.html'))).to
-    include('I am a teapot.')
+    expect(
+      Net::HTTP.get(URI('http://localhost/index.html'))
+    ).to include('I am a teapot.')
   end
 end
