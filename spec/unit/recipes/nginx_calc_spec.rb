@@ -12,6 +12,6 @@ describe 'nginx-calc::default' do
   end
 
   it 'starts the nginx daemon' do
-    expect(chef_run).to run_execute('/etc/init.d/nginx start')
+    expect(chef_run).to start_service('nginx')
   end
 end
