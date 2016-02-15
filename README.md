@@ -4,8 +4,8 @@ If you're building an artefact, you can and should test it with automated tests!
 
 What this does:
 - spins up a new VM with Debian as the OS
-- provisions the VM using Chef with nginx
-- configures nginx with Chef
+- provisions the VM: Chef installs Openresty with a script
+- provisions the VM: Chef installs my nginx configuration
 - once finished nginx will be running in a VM with an endpoint /calculate/{number-1}/plus/{number-2}
 - hitting this endpoint runs a lua script that performs the calculation
 - nginx returns the result
@@ -22,8 +22,7 @@ Tech Stack:
 - Chefspec
 - Serverspec
 - Test Kitchen
-- Nginx
-- Lua
+- Openresty (nginx / lua)
 
 Some usefull resources:
 - Testing bash scripts: https://github.com/realestate-com-au/bash-spec-2
