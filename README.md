@@ -2,6 +2,14 @@ In the spirit of promoting an interest in system administration / web operations
 
 If you're building an artefact, you can and should test it with automated tests!!!
 
+What this does:
+- spins up a new VM with Debian as the OS
+- provisions the VM using Chef with nginx
+- configures nginx with Chef
+- once finished nginx will be running in a VM with an endpoint /calculate/{number-1}/plus/{number-2}
+- hitting this endpoint runs a lua script that performs the calculation
+- nginx returns the result
+
 Pre reqz:
 - Ruby > 1.9
 - Vagrant
