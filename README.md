@@ -25,6 +25,7 @@ Tech Stack:
 - Openresty (nginx / lua)
 
 Some usefull resources:
+- Openresty: http://openresty.org/
 - Testing bash scripts: https://github.com/realestate-com-au/bash-spec-2
 - Testing Rake Tasks: https://robots.thoughtbot.com/test-rake-tasks-like-a-boss
 - Chef DK: https://downloads.chef.io/chef-dk/mac/
