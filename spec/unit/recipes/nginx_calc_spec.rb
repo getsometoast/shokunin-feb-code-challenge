@@ -17,8 +17,8 @@ describe 'nginx-calc::default' do
     expect(chef_run).to install_package('build-essential')
   end
 
-  it 'installs nginx' do
-    expect(chef_run).to install_package('nginx')
+  it 'installs openresty using the installation script' do
+    expect(chef_run).to run_script('install-openresty')
   end
 
   it 'starts the nginx daemon' do
